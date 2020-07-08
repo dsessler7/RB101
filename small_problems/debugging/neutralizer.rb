@@ -1,0 +1,26 @@
+def neutralize(sentence)
+  words = sentence.split(' ')
+  i = 0
+  loop do
+    break if i >= words.size
+    if negative?(words[i])
+      words.delete(words[i])
+      next
+    end
+    i += 1
+  end
+
+  words.join(' ')
+end
+
+def negative?(word)
+  [ 'dull',
+    'boring',
+    'annoying',
+    'chaotic'
+  ].include?(word)
+end
+
+puts neutralize('These dull boring cards are part of a chaotic board game.')
+# Expected: These cards are part of a board game.
+# Actual: These boring cards are part of a board game.
