@@ -63,6 +63,7 @@ You can determine a string's ASCII position by calling `#ord` on the string:
 ```
 
 Some things to remember:
+
 * Uppercase letters come before lowercase letters
 * Digits and (most) punctuation come before letters
 * There is an extended ASCII table containing accented and other characters - this comes after the main ASCII table
@@ -93,7 +94,7 @@ In this example, by reversing the order in which the items are compared, the arr
 
 For strings with multiple characters, the `<=>` method will compare the string character by character (so 'bad' comes before 'bat').  Also, in cases such as 'cap' <=> 'cape', 'cape' is longer and therefore considered greater by <=>.
 
-For arrays (comparing two arrays), `<=>` first compares the first element of the arrays, and then the second element and so on. 
+For arrays (comparing two arrays), `<=>` first compares the first element of the arrays, and then the second element and so on.
 
 ```ruby
 [['a', 'cat', 'b', 'c'], ['b', 2], ['a', 'car', 'd', 3], ['a', 'car', 'd']].sort

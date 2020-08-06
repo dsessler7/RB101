@@ -39,6 +39,7 @@ This lesson is about working through slightly larger programs. Here is the sugge
 It is a rubygem.  Have to install the gem (done) and have to add `require 'pry'` at the top of your program to access pry.
 
 It is a REPL (Read Evaluate Print Loop).  It's an interactive environment that:
+
 * takes user input
 * evaluates the input
 * returns the results to the user

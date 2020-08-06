@@ -1,7 +1,7 @@
 def shout_out_to(name)
-  name = name.chars.each { |c| c.upcase! }.join
+  #name = name.chars.each { |c| c.upcase! }.join
 
-  puts 'HEY ' + name
+  puts 'HEY ' + name.upcase!
 end
 
 shout_out_to('you') # expected: 'HEY YOU'
